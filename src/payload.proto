@@ -1,0 +1,23 @@
+syntax = "proto2";
+package org.epics.archiver.PB;
+
+message PayloadInfo {
+  required int32 year = 1;
+  required int32 dummy = 2;
+  required string PVName = 3;
+  optional int32 elementCount = 4;
+  optional int32 disconnected = 5;
+}
+
+message Sample {
+  required sfixed64 secondsintoyear = 1;
+  required int32 nano = 2;
+  required int32 severity = 3;
+  required int32 status = 4;
+  repeated double val = 5;
+}
+
+message Payload {
+  required PayloadInfo info = 1;
+  repeated Sample sample = 2;
+}

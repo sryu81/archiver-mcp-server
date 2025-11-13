@@ -1,0 +1,14 @@
+archiver-mcp-server/
+├── src/
+│   ├── archiver_mcp_server/
+│   │   ├── __init__.py
+│   │   ├── server.py           # Main MCP server
+│   │   ├── archiver_client.py  # EPICS Archiver interface
+│   │   ├── protobuf_parser.py  # Protobuf parsing logic
+│   │   └── generated/
+│   │       ├── __init__.py
+│   │       └── payload_pb2.py  # Generated from payload.proto
+│   └── payload.proto            # EPICS Archiver protobuf schema
+├── pyproject.toml
+├── README.md
+└── .env.example

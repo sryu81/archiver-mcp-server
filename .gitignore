@@ -1,2 +1,2 @@
 venv/*
-src/archiver_mpc_server.egg-info/*
+src/archiver_mcp_server.egg-info/*
